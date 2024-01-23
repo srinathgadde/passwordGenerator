@@ -26,7 +26,7 @@ function App() {
       // console.log(pass);
     }
     setPassword(pass);
-  }, [length, numberAllowed, charAllowed, setPassword]); //it will run fine even if no 'setPassword' (memorization concept)
+  }, [length, numberAllowed, charAllowed, setPassword]); //it will run fine even if no 'setPassword' (memoization concept)
 
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
